@@ -1,0 +1,231 @@
+:root {
+    --primary-fon-color: #FFFFFF;
+    --color-logo-btn-pmenu: #4D5AE5;
+    --color-menu-h: #2E2F42;
+    --color-adress-p: #434455;
+    --color-hover-focus: #404BBF;
+    --color-footer-text: #E7E9FC;
+    --color-back-fonteam-logo2-pmenubtn: #F4F4FD;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-fon-color);
+}
+
+/* ============ Header ==========*/
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-logo-btn-pmenu);
+}
+
+.logo-second {
+    color: var(--color-menu-h);
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-menu-h);
+}
+
+.menu-contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-adress-p);
+    font-style: normal;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.current {
+    color: var(--color-hover-focus);
+}
+
+.menu-contact:hover,
+.menu-contact:focus {
+    color: var(--color-hover-focus);
+}
+
+/* ============ /Header ==========*/
+
+/* ============ Hero Section ========== */
+.hero {
+    background-color: var(--color-menu-h);
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--primary-fon-color);
+}
+
+.hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--primary-fon-color);
+    background-color: var(--color-logo-btn-pmenu);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--color-hover-focus);
+}
+
+/* ============ /Hero Section ========== */
+
+/* ========== Feature Section ==========*/
+.feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-menu-h);
+}
+
+.feature-text {
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+    color: var(--color-adress-p);
+}
+
+/* ========== /Feature Section ==========*/
+
+/* ============ Promo Section ============*/
+.promo-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color-menu-h);
+}
+
+/* ============ /Promo Section ===========*/
+
+/* ============ Team Section =============*/
+.team {
+    background-color: var(--color-back-fonteam-logo2-pmenubtn);
+}
+
+.team-item {
+    width: 264px;
+    height: 380px;
+    background-color: var(--primary-fon-color);
+}
+
+.team-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-menu-h);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-menu-h);
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-adress-p);
+}
+
+/* ============ /Team Section ============*/
+
+/* ========== Footer ===========*/
+.footer {
+    background-color: var(--color-menu-h);
+}
+
+.logotype {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-logo-btn-pmenu);
+}
+
+.logotype-second {
+    color: var(--color-back-fonteam-logo2-pmenubtn);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-footer-text);
+}
+
+/* ========== /Footer ===========*/
+
+/* ==PORTFOLIO PAGE=== */
+.menu-filter-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--color-logo-btn-pmenu);
+    background-color: var(--color-back-fonteam-logo2-pmenubtn);
+}
+
+.menu-filter-btn:hover,
+.menu-filter-btn:focus {
+    background-color: var(--color-hover-focus);
+    color: var(--primary-fon-color);
+}
+
+.menu-filter-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-menu-h);
+}
+
+.menu-filter-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-adress-p);
+}
