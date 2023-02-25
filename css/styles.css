@@ -8,6 +8,25 @@
     --color-back-fonteam-logo2-pmenubtn: #F4F4FD;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
@@ -21,6 +40,15 @@ body {
     background-color: var(--primary-fon-color);
 }
 
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
 /* ============ Header ==========*/
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -30,6 +58,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-logo-btn-pmenu);
+    margin-right: 76px;
 }
 
 .logo-second {
@@ -42,7 +71,12 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-menu-h);
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+
 
 .menu-contact {
     font-size: 16px;
@@ -63,19 +97,44 @@ body {
     color: var(--color-hover-focus);
 }
 
+.menu-header,
+.header-nav,
+.head-cont {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item,
+.menu-item:not(:first-child) {
+    margin-left: 40px;
+}
+
+.header-contact {
+    margin-left: auto;
+}
+
+.head-cont {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 /* ============ /Header ==========*/
 
 /* ============ Hero Section ========== */
 .hero {
     background-color: var(--color-menu-h);
+    text-align: center;
 }
 
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--primary-fon-color);
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 496px;
+    padding-top: 188px;
 }
 
 .hero-btn {
@@ -87,6 +146,13 @@ body {
     cursor: pointer;
     color: var(--primary-fon-color);
     background-color: var(--color-logo-btn-pmenu);
+
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    margin-bottom: 188px;
+
 }
 
 .hero-btn:hover,
@@ -97,12 +163,30 @@ body {
 /* ============ /Hero Section ========== */
 
 /* ========== Feature Section ==========*/
+.feature-list {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .feature-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-menu-h);
+    margin-bottom: 8px;
+}
+
+.feature-item {
+    justify-content: space-between;
+    width: calc((100% - 72px) /4);
+    margin-right: 24px;
+
+}
+
+.feature-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .feature-text {
@@ -115,6 +199,12 @@ body {
 /* ========== /Feature Section ==========*/
 
 /* ============ Promo Section ============*/
+.promo .list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
 .promo-title {
     font-size: 36px;
     line-height: 1.11;
@@ -122,6 +212,7 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: var(--color-menu-h);
+    margin-bottom: 72px;
 }
 
 /* ============ /Promo Section ===========*/
@@ -131,10 +222,18 @@ body {
     background-color: var(--color-back-fonteam-logo2-pmenubtn);
 }
 
+.team .list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+}
+
 .team-item {
     width: 264px;
     height: 380px;
     background-color: var(--primary-fon-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -145,6 +244,8 @@ body {
     text-transform: capitalize;
     color: var(--color-menu-h);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .team-subtitle {
@@ -154,6 +255,8 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-menu-h);
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -172,6 +275,7 @@ body {
 }
 
 .logotype {
+    display: inline-flex;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -179,6 +283,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-logo-btn-pmenu);
+    margin-top: 100px;
 }
 
 .logotype-second {
@@ -190,30 +295,82 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-footer-text);
+    max-width: 264px;
+    margin-top: 16px;
+    padding-bottom: 100px;
 }
 
 /* ========== /Footer ===========*/
 
 /* ==PORTFOLIO PAGE=== */
+.menu-filter {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.list-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 72px;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 24px;
+}
+
 .menu-filter-btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     cursor: pointer;
     color: var(--color-logo-btn-pmenu);
     background-color: var(--color-back-fonteam-logo2-pmenubtn);
+    border-radius: 4px;
+    border: 1px solid #E7E9FC;
+    padding: 12px 24px;
 }
 
 .menu-filter-btn:hover,
 .menu-filter-btn:focus {
     background-color: var(--color-hover-focus);
     color: var(--primary-fon-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.list-img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.img-p {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list-item {
+    width: calc((100% - 48px) /3);
+
+}
+
+.list-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.img-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border: 1px solid #E7E9FC;
+    border-top: 0;
+    margin-right: 0;
+}
+
 
 .menu-filter-subtitle {
     font-weight: 500;
@@ -221,6 +378,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-menu-h);
+    padding-bottom: 8px;
 }
 
 .menu-filter-text {
