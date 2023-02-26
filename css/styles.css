@@ -285,7 +285,7 @@ body {
     padding: 32px 16px;
 }
 
-/* ============ /Team Section ============*/
+/* ====== /Team Section ======*/
 
 /* ========== Footer ===========*/
 .footer {
@@ -319,7 +319,7 @@ body {
 
 /* ========== /Footer ===========*/
 
-/* ==PORTFOLIO PAGE=== */
+/* ===== PORTFOLIO PAGE ===== */
 .menu-filter {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -371,7 +371,6 @@ body {
 
 .list-item .link:hover,
 .list-item .link:focus {
-    border: 1px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -404,7 +403,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-menu-h);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .menu-filter-text {
